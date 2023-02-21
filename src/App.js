@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import NavBar from "./components/NavBar";
+
+const Container = styled.div`
+height: 100vh;
+background-image: url("https://images.pexels.com/photos/13519282/pexels-photo-13519282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-repeat: no-repeat;
+background-size: cover;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Container>
+    <NavBar />
+   </Container> 
   );
 }
 
