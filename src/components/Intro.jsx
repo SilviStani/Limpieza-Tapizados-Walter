@@ -75,7 +75,7 @@ const Intro = () => {
           <Info>
             <Button>Consultas =></Button>
             <Contact>
-                <Phone>Resistencia / Corrientes<br/>+549-362-5161038<br/>+549-3425-972698</Phone>
+                <Phone>Resistencia / Corrientes<br/>+549-362-5161038<br/>+549-342-5972698</Phone>
             </Contact>
           </Info>
         </Left>
