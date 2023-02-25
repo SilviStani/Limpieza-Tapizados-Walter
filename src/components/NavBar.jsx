@@ -47,10 +47,9 @@ const NavBar = () => {
             <Logo src="/assets/Logo-byn.png" alt="Logo Walter Tapizados"/>
             <Menu> 
                 <MenuItem>Home</MenuItem>
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Services</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>Contact</MenuItem>
+                <MenuItem>Galeria de Fotos</MenuItem>
+                <MenuItem>Demo</MenuItem>
+                <MenuItem>Contacto</MenuItem>
             </Menu>
         </Left>
      </Wrapper>

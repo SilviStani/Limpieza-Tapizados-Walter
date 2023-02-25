@@ -75,7 +75,7 @@ const Intro = () => {
           <Info>
             <Button>Consultas =></Button>
             <Contact>
-                <Phone>Resistencia / Corrientes<br/>+549-362-5161038<br/>+549-342-5972698</Phone>
+                <Phone>Resistencia / Corrientes<br/><a href="tel:+5493625161038" style={{textDecoration:" none", color: 'gray', fontFamily: 'monospace'}}>+549-362-5161038</a><br/><a href="tel:+5493425972698" style={{textDecoration:" none", color: 'gray', fontFamily: 'monospace'}}>+549-342-5972698</a></Phone>
             </Contact>
           </Info>
         </Left>

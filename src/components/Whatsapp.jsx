@@ -6,7 +6,7 @@ display: flex;
 padding: 10px;
 position: fixed;
 margin-left: 93vw;
-margin-top: calc(85vh - 50px);
+margin-top: calc(80vh - 50px);
 z-index: 999;
 `;
 

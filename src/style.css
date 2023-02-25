@@ -1,6 +1,8 @@
 .container{
 font-family: monospace;
 font-style: italic;
-justify-content: right;
-
+justify-content:space-between;
+text-align: center;
+border-bottom: 2px dashed black;
+text-transform: capitalize;
 }
