@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import './Intro.css'
 
 
 const Container = styled.div`
@@ -13,10 +14,21 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+@media screen and (max-width: 500px) {
+  height: 60%;
+}
 `;
 
 const Right = styled.div`
 width: 40%;
+@media screen and (max-width: 500px) {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+justify-content: center;
+  width: 100%;
+  height: 40%;
+}
 `;
 
 const Title = styled.h1`
@@ -36,6 +48,9 @@ display: flex;
 justify-content:space-between;
 align-item: center;
 margin-top: 50px;
+@media screen and (max-width: 500px) {
+  margin-top: 10px;
+}
 `;
 
 const Button = styled.button`
@@ -64,18 +79,24 @@ color: gray;
 
 const Image = styled.img`
 height: 100%;
+
+@media screen and (max-width: 500px) {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
 `;
 
 const Intro = () => {
   return (
-    <Container>
-        <Left>
-          <Title>Limpieza y Desinfección de Tapizados</Title>
-          <Desc>Sillones, Sofás, Automoviles, Cortinados, Colchones, Alfombras, Limpieza en Seco.</Desc> 
-          <Info>
-            <a href="#contacto"><Button>Consultas =></Button></a>
+    <Container className='container'>
+        <Left className='left'>
+          <Title className='title'>Limpieza y Desinfección de Tapizados</Title>
+          <Desc className='Desc'>Sillones, Sofás, Automoviles, Cortinados, Colchones, Alfombras, Limpieza en Seco.</Desc> 
+          <Info className='info'>
+            <a href="#contacto"><Button className='boton'>Consultas =></Button></a>
             <Contact>
-                <Phone>Resistencia / Corrientes<br/><a href="tel:+5493625161038" style={{textDecoration:" none", color: 'gray', fontFamily: 'monospace'}}>+549-362-5161038</a><br/><a href="tel:+5493425972698" style={{textDecoration:" none", color: 'gray', fontFamily: 'monospace'}}>+549-342-5972698</a></Phone>
+                <Phone className='phone'>Resistencia / Corrientes<br/><a href="tel:+5493625161038" style={{textDecoration:" none", color: 'gray', fontFamily: 'monospace'}}>+549-362-5161038</a><br/><a href="tel:+5493425972698" style={{textDecoration:" none", color: 'gray', fontFamily: 'monospace'}}>+549-342-5972698</a></Phone>
             </Contact>
           </Info>
         </Left>

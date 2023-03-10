@@ -1,0 +1,33 @@
+@media screen and (max-width: 500px) {
+    .left{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }  
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .Desc{
+        font-size: 18px;
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .boton{
+        padding: 10px;
+        font-size: 15px
+    }
+
+    .phone{
+        font-size: 15px;
+    }
+
+}

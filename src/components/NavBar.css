@@ -1,0 +1,20 @@
+@media screen and (max-width: 500px) {
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menuItem{
+        font-size: 15px;
+    }
+
+    .logo{
+        height: 35px;
+    }
+}

@@ -1,8 +1,6 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
-import data from "../data";
 
 const Container = styled.div`
   height: calc(100vh - 200px);
@@ -16,6 +14,13 @@ const ContainerTwo = styled.div`
   height: 100%;
   display: flex;
   justify-content:space-around;
+  @media screen and (max-width: 500px) {
+    margin-top: 1vh;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
 `;
 
 const Right = styled.div`
@@ -30,11 +35,27 @@ const Right = styled.div`
   text-align: center;
   border: dashed white 2px;
   box-shadow: 0px 0px 2px 8px gray;
-`;
-const Left = styled.div`
-  width: 60%;
-  display: flex;
-  justify-content: center;
+  @media screen and (max-width: 500px) {
+    margin-left: 15px;
+    height: 400px;
+    width: 90%;
+    background-color: gray;
+    border-radius: 20px;
+    border: dashed white 2px;
+    box-shadow: 0px 0px 2px 8px gray;
+   }
+   `;
+   const Left = styled.div`
+   width: 60%;
+   display: flex;
+   justify-content: center;
+   @media screen and (max-width: 500px) {
+     width:80%;
+     height: 60%;
+     display: flex;
+     margin-left: 40px;
+   }
+  
 `;
 
 const Title = styled.h2`
@@ -49,12 +70,20 @@ const Title = styled.h2`
   font-size: 40px;
   text-decoration: underline crimson;
   width: 100%;
+  @media screen and (max-width: 500px) {
+    margin-top:10px;
+    font-size: 25px;
+  }
 `;
 
 const Desc = styled.p`
   font-size: 20px;
   width: 60%;
   margin-top: 20px;
+  @media screen and (max-width: 500px) {
+   font-size: 18px;
+   color: white;
+   }
 `;
 
 const Carrusel = () => {

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import './NavBar.css'
 
 const Container = styled.div`
 heigth: 50px;
@@ -45,23 +46,23 @@ color: gray;
 
 const NavBar = () => {
   return (
-    <Container id='home' >
+    <Container id='home' className='container'>
      <Wrapper >
         <Left>
           <a href="#home">
-            <Logo src="/assets/Logo-byn.png" alt="Logo Walter Tapizados" />
+            <Logo src="/assets/Logo-byn.png" alt="Logo Walter Tapizados" className="logo"/>
           </a>
-            <Menu style={{cursor:"pointer"}}> 
-               <a href="#galeria" style={{textDecoration:"none"}}><MenuItem>Galeria de Fotos</MenuItem></a> 
-               <a href="#Demo" style={{textDecoration:"none"}}><MenuItem>Demo</MenuItem></a> 
-               <a href="#contacto" style={{textDecoration:"none"}}><MenuItem >Contacto</MenuItem></a>
+            <Menu style={{cursor:"pointer"}} className="menu"> 
+               <a href="#galeria" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Fotos</MenuItem></a> 
+               <a href="#Demo" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Demo</MenuItem></a> 
+               <a href="#contacto" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Contacto</MenuItem></a>
             </Menu>
         </Left>
         <Right>
           <a href="https://www.instagram.com/waltertapizados/" target="_blank" rel="noopener noreferrer">
-          <Logo src="/assets/instagram.png" alt="Instagram Walter Tapizados" height={"40px"}/>
+          <Logo src="/assets/instagram.png" alt="Instagram Walter Tapizados" height={"40px"} className="logo"/>
           </a>
-          <a href="https://wa.me/5493425972698/?text=Estoy%20interesado%20en%20su%20servicio" target="_blank" rel="noopener noreferrer"><Logo src="/assets/whatsapp.png" alt="Instagram Walter Tapizados" height={"40px"} style={{marginLeft: "10px"}}/></a>
+          <a href="https://wa.me/5493425972698/?text=Estoy%20interesado%20en%20su%20servicio" target="_blank" rel="noopener noreferrer"><Logo className="logo" src="/assets/whatsapp.png" alt="Instagram Walter Tapizados" height={"40px"} style={{marginLeft: "10px"}}/></a>
         </Right>
      </Wrapper>
     </Container>

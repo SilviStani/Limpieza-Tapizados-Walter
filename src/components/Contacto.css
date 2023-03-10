@@ -19,6 +19,10 @@
     width: 100%;
     border-bottom: 2px dashed black;
     border-top: 2px dashed black;
+    @media screen and (max-width: 500px) {
+        margin-top: 10px;
+         
+    }
 }
 
 .Titulo{
@@ -84,3 +88,40 @@
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 500px) {
+    .Titulo{
+        font-size: 25px;
+    }  
+
+    .formTop{
+        height: 80%;
+        width: 95%;
+    }
+    .form{
+        height: 85%;
+        width: 95%;
+    }
+    .formulario{
+        height: 85%;
+        width: 95%;
+    }
+    .inputs{
+        width: 350px;
+        margin: 10px;
+    }
+    .Container{
+        height: 100%;
+    }
+    .area{
+        height: 300px;
+    }
+    .img{
+        height: 20px;
+    }
+    .a{
+        width: 50px;
+        background-color: #228363;
+        border-radius: 100%;
+    }
+   }
