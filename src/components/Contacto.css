@@ -1,0 +1,66 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TituloContainer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px dashed black;
+    border-top: 2px dashed black;
+}
+
+.Titulo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline crimson;
+}
+
+.inputs{
+    width: 400px;
+    margin: 10px;
+}
+
+.form{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+}
+
+.area{
+    height: 200px;
+}
+
+h4{
+    padding: 20px;
+    background-color: crimson;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+h4:hover{
+    background-color: White;
+    color: crimson;
+    border: 2px solid black;
+}
+
+.a{
+    text-decoration: none;
+}

@@ -62,7 +62,7 @@ const Desc = styled.p`
 
 const Carrusel = () => {
   return (
-    <Container>
+    <Container id="galeria">
       <Title>Galeria de Fotos</Title>
       <ContainerTwo>
         <Right>

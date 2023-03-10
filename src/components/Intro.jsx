@@ -73,7 +73,7 @@ const Intro = () => {
           <Title>Limpieza y Desinfección de Tapizados</Title>
           <Desc>Sillones, Sofás, Automoviles, Cortinados, Colchones, Alfombras, Limpieza en Seco.</Desc> 
           <Info>
-            <Button>Consultas =></Button>
+            <a href="#contacto"><Button>Consultas =></Button></a>
             <Contact>
                 <Phone>Resistencia / Corrientes<br/><a href="tel:+5493625161038" style={{textDecoration:" none", color: 'gray', fontFamily: 'monospace'}}>+549-362-5161038</a><br/><a href="tel:+5493425972698" style={{textDecoration:" none", color: 'gray', fontFamily: 'monospace'}}>+549-342-5972698</a></Phone>
             </Contact>

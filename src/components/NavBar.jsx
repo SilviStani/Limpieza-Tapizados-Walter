@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Container = styled.div`
 heigth: 50px;
 width: 100%;
-background-color: rgba(255, 255, 255, 0.8);
 border-bottom: gray 2px dashed;
 `;
 
@@ -29,6 +28,7 @@ const Logo = styled.img`
 height: 50px;
 border-radius: 100%;
 cursor: pointer;
+box-shadow: 2px 2px 6px 4px gray;
 `;
 
 
@@ -46,18 +46,16 @@ color: gray;
 
 const NavBar = () => {
   return (
-    <Container id='home' style={{position: "fixed",
-    zIndex: 3}} >
+    <Container id='home' >
      <Wrapper >
         <Left>
           <a href="#home">
-            <Logo src="/assets/Logo-byn.png" alt="Logo Walter Tapizados" />
+            <Logo src="/assets/Logo-byn.png" alt="Logo Walter Tapizados" style={{position:"fixed"}}/>
           </a>
-            <Menu> 
-                <MenuItem>Home</MenuItem>
-                <MenuItem>Galeria de Fotos</MenuItem>
-                <MenuItem>Demo</MenuItem>
-                <MenuItem>Contacto</MenuItem>
+            <Menu style={{cursor:"pointer"}}> 
+               <a href="#galeria" style={{textDecoration:"none"}}><MenuItem>Galeria de Fotos</MenuItem></a> 
+               <a href="#Demo" style={{textDecoration:"none"}}><MenuItem>Demo</MenuItem></a> 
+               <a href="#contacto" style={{textDecoration:"none"}}><MenuItem >Contacto</MenuItem></a>
             </Menu>
         </Left>
         <Right>
