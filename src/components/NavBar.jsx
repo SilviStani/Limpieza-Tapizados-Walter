@@ -21,14 +21,13 @@ align-item: center;
 justify-content: space-between;
 `;
 const Right = styled.div`
-
 `;
 
 const Logo = styled.img`
-height: 50px;
+height: 45px;
 border-radius: 100%;
 cursor: pointer;
-box-shadow: 2px 2px 6px 4px gray;
+justify-content: space-between;
 `;
 
 
@@ -50,7 +49,7 @@ const NavBar = () => {
      <Wrapper >
         <Left>
           <a href="#home">
-            <Logo src="/assets/Logo-byn.png" alt="Logo Walter Tapizados" style={{position:"fixed"}}/>
+            <Logo src="/assets/Logo-byn.png" alt="Logo Walter Tapizados" />
           </a>
             <Menu style={{cursor:"pointer"}}> 
                <a href="#galeria" style={{textDecoration:"none"}}><MenuItem>Galeria de Fotos</MenuItem></a> 
@@ -60,8 +59,9 @@ const NavBar = () => {
         </Left>
         <Right>
           <a href="https://www.instagram.com/waltertapizados/" target="_blank" rel="noopener noreferrer">
-          <Logo src="/assets/instagram.png" alt="Instagram Walter Tapizados"/>
+          <Logo src="/assets/instagram.png" alt="Instagram Walter Tapizados" height={"40px"}/>
           </a>
+          <a href="https://wa.me/5493425972698/?text=Estoy%20interesado%20en%20su%20servicio" target="_blank" rel="noopener noreferrer"><Logo src="/assets/whatsapp.png" alt="Instagram Walter Tapizados" height={"40px"} style={{marginLeft: "10px"}}/></a>
         </Right>
      </Wrapper>
     </Container>

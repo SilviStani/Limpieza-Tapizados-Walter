@@ -35,6 +35,8 @@ const Right = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  border: 2px dashed black;
+  box-shadow: 0px 0px 2px 8px #eeeeee;
 `;
 const Left = styled.div`
   width: 60%;
