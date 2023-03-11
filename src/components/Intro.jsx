@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import './Intro.css'
-
 
 const Container = styled.div`
 height: calc(100vh - 50px);
 display: flex;
-padding: 20px
+padding: 20px;
+@media screen and (max-width: 500px) {
+  display: flex;
+  flex-direction: column;
+}
 `;
 const Left = styled.div`
 width: 60%;
@@ -16,6 +18,7 @@ align-items: center;
 justify-content: center;
 @media screen and (max-width: 500px) {
   height: 60%;
+  width: 100%;
 }
 `;
 
@@ -34,12 +37,19 @@ justify-content: center;
 const Title = styled.h1`
 font-size: 60px;
 width: 60%;
+@media screen and (max-width: 500px) {
+  font-size: 30px;
+  font-weight: bold;
+}
 `;
 
 const Desc = styled.p`
 font-size: 20px;
 width: 60%;
 margin-top:20px;
+@media screen and (max-width: 500px) {
+  font-size: 18px;
+}
 `;
 
 const Info = styled.div`
@@ -50,6 +60,9 @@ align-item: center;
 margin-top: 50px;
 @media screen and (max-width: 500px) {
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 `;
 
@@ -65,6 +78,10 @@ font-size: 20px;
 border-radius: 15px;
 border: white 2px dashed;
 box-shadow: 0px 0px 2px 2px gray;
+@media screen and (max-width: 500px) {
+      padding: 10px;
+      font-size: 15px
+  }
 `;
 
 const Contact = styled.div`
@@ -75,6 +92,10 @@ const Phone = styled.span`
 font-family: monospace;
 font-size: 17px;
 color: gray;
+@media screen and (max-width: 500px) {
+  .boton{
+    font-size: 15px;
+  }
 `;
 
 const Image = styled.img`

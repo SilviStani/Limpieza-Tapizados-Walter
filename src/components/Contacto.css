@@ -124,4 +124,7 @@
         background-color: #228363;
         border-radius: 100%;
     }
+    span{
+        display: none;
+    }
    }

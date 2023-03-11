@@ -1,11 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import './NavBar.css'
 
 const Container = styled.div`
 heigth: 50px;
 width: 100%;
 border-bottom: gray 2px dashed;
+@media screen and (max-width: 500px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -22,6 +26,9 @@ align-item: center;
 justify-content: space-between;
 `;
 const Right = styled.div`
+@media screen and (max-width: 500px) {
+ display: flex;
+ }
 `;
 
 const Logo = styled.img`
@@ -29,12 +36,22 @@ height: 45px;
 border-radius: 100%;
 cursor: pointer;
 justify-content: space-between;
+@media screen and (max-width: 500px) {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  }
 `;
 
 
 const Menu = styled.ul`
 display: flex;
 list-style: none;
+@media screen and (max-width: 500px) {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  }
 `;
 
 const MenuItem = styled.li`
@@ -42,6 +59,9 @@ margin-right: 30px;
 font-size: 20px;
 font-weight: bold;
 color: gray;
+@media screen and (max-width: 500px) {
+  font-size: 15px;
+  }
 `;
 
 const NavBar = () => {
