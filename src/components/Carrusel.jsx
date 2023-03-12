@@ -10,7 +10,7 @@ const Container = styled.div`
   widht: 100%;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     
   }
 `;
@@ -19,7 +19,7 @@ const ContainerTwo = styled.div`
   margin-top: 5vh;
   height: 100%;
   display: flex;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     margin-top: 1vh;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ const CarouselBootstrap = styled.div`
   display: flex;
   justify-content: center;
   align-item: center;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
    margin-top:5px;
    margin-left: 25px;
     width:100% 
@@ -54,16 +54,20 @@ const Right = styled.div`
   text-align: center;
   border: 2px dashed black;
   box-shadow: 0px 0px 2px 8px #eeeeee;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:100%;
-    height: 50%;
+    height: 15%;
     display: flex;
     margin-left: 40px;
+    border-radius: 20px;
   }
 `;
 const Left = styled.div`
-  width: 60%;
-  @media screen and (max-width: 500px) {
+  width: 85%;
+  @media screen and (max-width: 768px) {
     height: 50%;
     width:100% 
    }
@@ -81,7 +85,7 @@ const Title = styled.h2`
   font-size: 40px;
   text-decoration: underline crimson;
   width: 100%;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     margin-top:10px;
     font-size: 25px;
   }
@@ -91,7 +95,7 @@ const Desc = styled.p`
   font-size: 25px;
   width: 60%;
   margin-top: 20px;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     font-size: 20px;
     width: 100%;
     margin-top: 5px;
@@ -107,7 +111,7 @@ const Carrusel = () => {
           <Desc style={{fontWeight: "bold"}}>
             Sistema de Inyección – Extracción.
            <br />
-           <br /> <span style={{color: "crimson",fontWeight: "bold", fontFamily: "monospace", fontStyle: "italic"}}>Utilizamos las Mejores Máquinas y Productos de Limpieza.</span> 
+           <br /> <span className="span">Utilizamos las Mejores Máquinas y Productos de Limpieza.</span> 
           </Desc>
         </Right>
         <Left>
@@ -130,7 +134,7 @@ const Carrusel = () => {
                   />
                   <Carousel.Caption style={{backgroundColor: "gray", borderRadius: "10px", opacity: 0.9}} className="caption">
                     <h3>{e.label}</h3>
-                    <p>{e.p}</p>
+                    <p className="p">{e.p}</p>
                   </Carousel.Caption>
                 </Carousel.Item>
               ))}

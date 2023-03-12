@@ -52,6 +52,7 @@
     margin-top: 1%;
     display: flex;
     justify-content: center;
+    
     align-items: center;
     border-radius: 30px;
     border: 2px solid black;
@@ -89,7 +90,7 @@
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .Titulo{
         font-size: 25px;
     }  
@@ -122,9 +123,6 @@
     .a{
         width: 50px;
         background-color: #228363;
-        border-radius: 100%;
-    }
-    span{
-        display: none;
+        border-radius: 100%;   
     }
    }

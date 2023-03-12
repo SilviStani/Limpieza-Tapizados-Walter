@@ -1,7 +1,8 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .carrusel{
         width: 100%;
         margin-top: 10px;
+        margin-left: 30px;
     }   
     .items{
         height: 300px;
@@ -12,8 +13,17 @@
     .caption{
         height: 80px;   
     }
-    h3, p{
+    h3, .p{
         font-size: 15px;
     }
+    .span{
+        display: none;
+    }
    
+}
+.span{
+    color: crimson;
+    font-weight: bold;
+    font-family: monospace;
+    font-style: italic;
 }

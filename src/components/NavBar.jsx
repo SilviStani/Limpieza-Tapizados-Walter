@@ -5,7 +5,7 @@ const Container = styled.div`
 heigth: 50px;
 width: 100%;
 border-bottom: gray 2px dashed;
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -26,7 +26,7 @@ align-item: center;
 justify-content: space-between;
 `;
 const Right = styled.div`
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
  display: flex;
  }
 `;
@@ -36,7 +36,7 @@ height: 45px;
 border-radius: 100%;
 cursor: pointer;
 justify-content: space-between;
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   height: 35px;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ justify-content: space-between;
 const Menu = styled.ul`
 display: flex;
 list-style: none;
-@media screen and (max-width: 500px) {
+@media screen and (max-width:768px) {
   height: 40px;
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ margin-right: 30px;
 font-size: 20px;
 font-weight: bold;
 color: gray;
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   font-size: 15px;
   }
 `;
