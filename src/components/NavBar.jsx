@@ -38,9 +38,7 @@ border-radius: 100%;
 cursor: pointer;
 justify-content: space-between;
 @media screen and (max-width: 768px) {
-  height: 35px;
-  display: flex;
-  align-items: center;
+  display: none;
   }
 `;
 
@@ -62,6 +60,8 @@ font-weight: bold;
 color: gray;
 @media screen and (max-width: 768px) {
   font-size: 15px;
+  display: flex;
+  justify-content: center;
   }
 `;
 

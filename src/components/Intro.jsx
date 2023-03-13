@@ -6,6 +6,7 @@ height: calc(100vh - 50px);
 display: flex;
 padding: 20px;
 @media screen and (max-width: 768px) {
+  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   background-image: url("/assets/perrito-sillon.jpg");
@@ -64,10 +65,7 @@ justify-content:space-between;
 align-item: center;
 margin-top: 50px;
 @media screen and (max-width: 768px) {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  display: none;
 }
 `;
 
@@ -84,9 +82,7 @@ border-radius: 15px;
 border: white 2px dashed;
 box-shadow: 0px 0px 2px 2px gray;
 @media screen and (max-width: 768px) {
-      padding: 10px;
-      font-size: 15px;
-      margin-top: 150px;
+      
   }
 `;
 
