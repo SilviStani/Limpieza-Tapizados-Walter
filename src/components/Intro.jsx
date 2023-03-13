@@ -138,7 +138,7 @@ const Intro = () => {
           </Info>
         </Left>
         <Right>
-            <Image src='assets/sillon-gato.jpg' alt="Gato descansando en su sillon favorito" />
+            <Image src='assets/perrito-sillon.jpg' alt="Gato descansando en su sillon favorito" />
         </Right>
     </Container>
   )
