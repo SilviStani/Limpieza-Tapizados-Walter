@@ -20,7 +20,7 @@ align-item: center;
 `;
 
 const Left = styled.div`
-width: 60%;
+width: 100%;
 display: flex;
 align-item: center;
 justify-content: space-between;
@@ -77,13 +77,13 @@ const NavBar = () => {
                <a href="#Demo" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Demo</MenuItem></a> 
                <a href="#contacto" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Contacto</MenuItem></a>
             </Menu>
-        </Left>
         <Right>
           <a href="https://www.instagram.com/waltertapizados/" target="_blank" rel="noopener noreferrer">
           <Logo src="/assets/instagram.png" alt="Instagram Walter Tapizados" height={"40px"} className="logo"/>
           </a>
           <a href="https://wa.me/5493425972698/?text=Estoy%20interesado%20en%20su%20servicio" target="_blank" rel="noopener noreferrer"><Logo className="logo" src="/assets/whatsapp.png" alt="Instagram Walter Tapizados" height={"40px"} style={{marginLeft: "10px"}}/></a>
         </Right>
+        </Left>
      </Wrapper>
     </Container>
   )

@@ -5,6 +5,7 @@ import Demo from "./components/Demo";
 import AnimatedShapes from "./components/AnimatedShapes";
 import Intro from "./components/Intro";
 import NavBar from "./components/NavBar";
+import FooTer from "./components/Footer";
 
 const Container = styled.div`
 height: 100vh;
@@ -28,6 +29,7 @@ function App() {
      <Contacto/>
     <AnimatedShapes/>
    </Container>
+    <FooTer />
    </> 
   );
 }

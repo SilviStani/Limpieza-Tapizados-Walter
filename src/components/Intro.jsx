@@ -94,6 +94,7 @@ const Contact = styled.div`
 display: flex;
 flex-direction: column;
 `;
+
 const Phone = styled.span`
 font-family: monospace;
 font-size: 17px;
