@@ -3,14 +3,15 @@ import styled from 'styled-components';
 
 const FooTer = styled.footer`
 width: 100%;
-border-top: black dashed 2px;
-padding: 8px;
 height: 80px;
 display: flex;
 justify-content: space-between;
 justify-content: space-between;
 align-item: center;
 font-family: monospace;
+background-color: gray;
+color: white;
+margin-bottom: 0;
 `;
 
 const Container = styled.div`
@@ -23,12 +24,12 @@ text-align: center;
 const Huno = styled.h1`
 font-family: 'Playfair Display';
 font-size: 30px;
-color: gray;
+color: white;
 `;
 
 const A = styled.a`
 text-decoration: none;
-color: crimson;
+color: white;
 font-family: monospace;
 @media screen and (max-width: 768px) {
   color: white;
@@ -38,7 +39,7 @@ font-family: monospace;
 const Phone = styled.span`
 font-family: monospace;
 font-size: 17px;
-color: crimson;
+color: white;
 `;
 
 const Contact = styled.div`
@@ -65,8 +66,8 @@ const Footer = () => {
         </Huno>
           <Contact>
                 <Phone className='phone'>Resistencia / Corrientes<br/>
-                <A href="tel:+5493625161038">+549-362-5161038</A> <br/>
-                <A href="tel:+5493425972698">+549-342-5972698</A>
+                <img src="/assets/phone-call.png" alt="llamame en el siguiente enlace" height={"20px"} /><A href="tel:+5493625161038"> +549-362-5161038</A> <br/>
+                <img src="/assets/phone-call.png" alt="llamame en el siguiente enlace" height={"20px"} /><A href="tel:+5493425972698"> +549-342-5972698</A>
                 </Phone>
             </Contact>
     </Container>

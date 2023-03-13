@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import './Contacto.css';
 
 
@@ -7,22 +8,49 @@ const Contacto = () => {
   const [number, setNumber] = useState('');
   const [name, setName] = useState('');
   
+  const Container = styled.div`
+  display: flex;
+  width: 100%;
+  `;
+  
+  const Left = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  `;
+  const Right = styled.div`
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  `;
   return (
     <div className='Container' id='contacto'>
       <div className='TituloContainer'>
         <h1 className='Titulo'>¿Consultas? Contáctame</h1>
       </div>
-      <div className='formTop'>
+      <Container>
+      <Left>
+        <video src="/assets/celular.mp4"
+        width={"600px"}
+            autoPlay
+            loop
+            muted
+            style={{ marginLeft: "30%" }}/>
+      </Left>
+        <Right>
       <div className='form'>
         <form className="formulario">
-          <h5>Nombre:</h5>
+          <p>Nombre:</p>
         <input
         className='inputs'
         id="name"
         placeholder="Nombre:"
         value={name}
         onChange={e => setName(e.target.value)} />
-        <h5>Número Alternativo:</h5>
+        <p>Número Alternativo:</p>
         <input
           className='inputs'
           id="number"
@@ -30,18 +58,14 @@ const Contacto = () => {
           value={number}
           onChange={e => setNumber(e.target.value)}
           />
-          <h5>Consulta:</h5>  
+          <p>Consulta:</p>  
         <textarea className='inputs area' id="message" name="w3review" rows="4" cols="50" value={message} placeholder={"Escribe tu consulta aqui:"} onChange={e => setMessage(e.target.value)} />
       <a href={`https://wa.me/5491163632288/?text=Nombre: ${name} + ${"\n"} + %20 + Teléfono alternativo: ${number} + ${"\n"}  + %20 + Mensaje: ${message}`}
-      target="_blank" rel="noopener noreferrer" className='a'><img src="/assets/send-message.png" alt="" height={"30px"} className='img'/></a>
+      target="_blank" rel="noopener noreferrer" className='a'><img src="/assets/send-message.png" alt="" height={"20px"} className='img'/></a>
       </form>
       </div>
-      <div className='sur'>
-        <img src="/assets/pantalla.png" alt="" height={"30px"} className='img'/>
-        <img src="/assets/oval.png" alt="" height={"30px"} width={"60px"} className='img'/>
-        <img src="/assets/flecha-izquierda.png" alt="" height={"30px"} className='img'/>
-      </div>
-      </div>
+      </Right>
+      </Container>
     </div>
   )
 }

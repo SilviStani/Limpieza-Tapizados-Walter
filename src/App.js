@@ -29,7 +29,9 @@ function App() {
      <Contacto/>
     <AnimatedShapes/>
    </Container>
-    <FooTer />
+   <Container style={{height: "12vh", backgroundColor: "gray"}}>
+    <FooTer/>
+   </Container>
    </> 
   );
 }

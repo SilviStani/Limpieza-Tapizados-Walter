@@ -5,6 +5,7 @@ const Container = styled.div`
 heigth: 50px;
 width: 100%;
 border-bottom: gray 2px dashed;
+background-color: white;
 @media screen and (max-width: 768px) {
       display: flex;
       justify-content: space-between;
@@ -66,11 +67,11 @@ color: gray;
 
 const NavBar = () => {
   return (
-    <Container id='home' className='container'>
+    <Container id='home'>
      <Wrapper >
         <Left>
           <a href="#home">
-            <Logo src="/assets/Logo-byn.png" alt="Logo Walter Tapizados" className="logo"/>
+            <Logo src="/assets/Logo-byn.png" alt="Logo Walter Tapizados" style={{height: "55px", position:"fixed"}} />
           </a>
             <Menu style={{cursor:"pointer"}} className="menu"> 
                <a href="#galeria" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Fotos</MenuItem></a> 

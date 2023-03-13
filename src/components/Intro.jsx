@@ -123,7 +123,7 @@ font-family: monospace;
 
 const Intro = () => {
   return (
-    <Container >
+    <Container>
         <Left >
           <Title >Limpieza y Desinfección de Tapizados</Title>
           <Desc >Sillones, Sofás, Automoviles, Cortinados, Colchones, Alfombras, Limpieza en Seco.</Desc> 
