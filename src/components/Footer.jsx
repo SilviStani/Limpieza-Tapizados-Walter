@@ -107,7 +107,7 @@ const Footer = () => {
                 Todos los Derechos Reservados
             </Pe>
             Siguenos!
-            <Instagram><img src='/assets/instagram.png' alt='instagram link' height={"40px"}/></Instagram>
+            <Instagram href="https://www.instagram.com/waltertapizados/" target="_blank" rel="noopener noreferrer"><img src='/assets/instagram.png' alt='instagram link' height={"40px"}/></Instagram>
     </Right>
     </FooTer>
   )
