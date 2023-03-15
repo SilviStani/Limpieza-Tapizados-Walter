@@ -7,6 +7,10 @@ const Container = styled.div`
   widht: 100%;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 500px) {
+    height: 100%;
+    background-color: black;
+  }
 `;
 
 const ContainerTwo = styled.div`
@@ -15,7 +19,7 @@ const ContainerTwo = styled.div`
   display: flex;
   justify-content:space-around;
   @media screen and (max-width: 500px) {
-    margin-top: 1vh;
+    margin-top: 0px;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
@@ -36,15 +40,15 @@ const Right = styled.div`
   border: dashed white 2px;
   box-shadow: 0px 0px 2px 8px gray;
   @media screen and (max-width: 500px) {
- display: none;
-   }
-   `;
-   const Left = styled.div`
-   width: 100%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   @media screen and (max-width: 500px) {
+    display: none;
+  }
+  `;
+  const Left = styled.div`
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  @media screen and (max-width: 500px) {
      width:80%;
      height: 60%;
      display: flex;
@@ -66,8 +70,9 @@ const Title = styled.h2`
   text-decoration: underline crimson;
   width: 100%;
   @media screen and (max-width: 500px) {
-    margin-top:10px;
+    margin-top: 2px;
     font-size: 25px;
+    border: none;
   }
 `;
 
@@ -75,6 +80,9 @@ const Desc = styled.p`
   font-size: 20px;
   width: 60%;
   margin-top: 20px;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Carrusel = () => {
@@ -88,7 +96,6 @@ const Carrusel = () => {
             autoPlay
             loop
             muted
-            style={{ margin: "30px" }}
           >
             <source
               src="/assets/TapizadosWalWhatsapp.mp4"

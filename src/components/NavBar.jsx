@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import './navbar.css'
 
 const Container = styled.div`
 heigth: 50px;
@@ -18,6 +19,13 @@ padding: 10px 20px;
 display: flex;
 justify-content: space-between;
 align-item: center;
+@media screen and (max-width: 768px) {
+  width: 100%;
+  display: flex;
+  align-item: center;
+  justify-content: space-between;
+  
+}
 `;
 
 const Left = styled.div`
@@ -77,6 +85,7 @@ const NavBar = () => {
                <a href="#galeria" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Fotos</MenuItem></a> 
                <a href="#Demo" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Video</MenuItem></a> 
                <a href="#contacto" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Contacto</MenuItem></a>
+               <a href="https://wa.me/5493425972698/?text=Estoy%20interesado%20en%20su%20servicio" target="_blank" rel="noopener noreferrer"><img className="logoWhatsapp" src="/assets/whatsapp.png" alt="Instagram Walter Tapizados" height={"35px"} style={{marginLeft: "10px"}}/></a>
             </Menu>
         <Right>
           <a href="https://www.instagram.com/waltertapizados/" target="_blank" rel="noopener noreferrer">

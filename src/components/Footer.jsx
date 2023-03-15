@@ -25,6 +25,9 @@ const Huno = styled.h1`
 font-family: 'Playfair Display';
 font-size: 30px;
 color: white;
+@media screen and (max-width: 768px) {
+  display: none;
+}
 `;
 
 const A = styled.a`
@@ -40,6 +43,9 @@ const Phone = styled.span`
 font-family: monospace;
 font-size: 17px;
 color: white;
+@media screen and (max-width: 768px) {
+  
+}
 `;
 
 const Contact = styled.div`
@@ -47,15 +53,39 @@ display: flex;
 margin-left: 45px;
 flex-direction: column;
 text-align: center;
+@media screen and (max-width: 768px) {
+display: flex;
+margin-left: 5px;
+flex-direction: column;
+text-align: center;
+}
 `;
 
 const Right = styled.div`
 with: 40%;
+@media screen and (max-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
 `;
 
 const Pe = styled.p`
-
+@media screen and (max-width: 768px) {
+  display: none;
+}
 `;
+
+const Instagram = styled.a`
+display: none;
+@media screen and (max-width: 768px) {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+`;
+
 
 const Footer = () => {
   return (
@@ -76,6 +106,8 @@ const Footer = () => {
             © 2023 - Walter - Limpieza Tapizados<br />
                 Todos los Derechos Reservados
             </Pe>
+            Siguenos!
+            <Instagram><img src='/assets/instagram.png' alt='instagram link' height={"40px"}/></Instagram>
     </Right>
     </FooTer>
   )
