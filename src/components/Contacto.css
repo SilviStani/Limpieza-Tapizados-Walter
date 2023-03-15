@@ -93,32 +93,32 @@
 }
 
 @media screen and (max-width: 768px) {
+    .TituloContainer{
+        width: 100%;
+        background-color: transparent;
+    }
     .Titulo{
         font-size: 25px;
+        font-weight: bolder;
     }  
-
-    .formTop{
-        height: 80%;
-        width: 95%;
-    }
-    .form{
-        height: 85%;
-        width: 95%;
-    }
-    .formulario{
-        height: 85%;
-        width: 95%;
+    .formW{
+        height: 100%;
+        width: 100%;
     }
     .inputs{
-        width: 250px;
+        width: 350px;
         margin: 10px;
     }
-    .Container{
+    .container{
         height: 100%;
+        width: 100%;;
+        background-image: url("../../public/assets/whatsfondo.png");
+        background-size: contain;
+
     }
     .area{
-        height: 300px;
-        width: 250px;
+        height: 380px;
+        width: 350px;
     }
     .img{
         height: 20px;
@@ -133,10 +133,8 @@
         display: none;
     }
     .Right{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
-   }
+
+}
+   

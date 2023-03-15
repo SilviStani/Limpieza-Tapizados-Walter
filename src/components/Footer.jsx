@@ -6,13 +6,12 @@ width: 100%;
 height: 80px;
 display: flex;
 justify-content: space-between;
-justify-content: space-between;
 align-item: center;
 font-family: monospace;
 background-color: gray;
 color: white;
-margin-bottom: 0;
 @media screen and (max-width: 768px) {
+  padding: 5px;
   border-top: 2px solid black;
   background-color: white;
 }
@@ -49,6 +48,7 @@ font-size: 17px;
 color: white;
 @media screen and (max-width: 768px) {
   color: gray;
+  font-size: 12px;
 }
 `;
 
@@ -116,4 +116,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
