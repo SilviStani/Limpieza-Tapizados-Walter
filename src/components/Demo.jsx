@@ -36,17 +36,12 @@ const Right = styled.div`
   border: dashed white 2px;
   box-shadow: 0px 0px 2px 8px gray;
   @media screen and (max-width: 500px) {
-    margin-left: 15px;
-    height: 400px;
-    width: 90%;
-    background-color: gray;
-    border-radius: 20px;
-    border: dashed white 2px;
-    box-shadow: 0px 0px 2px 8px gray;
+ display: none;
    }
    `;
    const Left = styled.div`
-   width: 60%;
+   width: 100%;
+   height: 100%;
    display: flex;
    justify-content: center;
    @media screen and (max-width: 500px) {
@@ -80,16 +75,12 @@ const Desc = styled.p`
   font-size: 20px;
   width: 60%;
   margin-top: 20px;
-  @media screen and (max-width: 500px) {
-   font-size: 18px;
-   color: white;
-   }
 `;
 
 const Carrusel = () => {
   return (
     <Container id="Demo">
-      <Title>Demo</Title>
+      <Title>Video</Title>
       <ContainerTwo>
         <Left>
           <video

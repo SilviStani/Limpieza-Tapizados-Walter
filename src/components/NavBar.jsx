@@ -75,7 +75,7 @@ const NavBar = () => {
           </a>
             <Menu style={{cursor:"pointer"}} className="menu"> 
                <a href="#galeria" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Fotos</MenuItem></a> 
-               <a href="#Demo" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Demo</MenuItem></a> 
+               <a href="#Demo" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Video</MenuItem></a> 
                <a href="#contacto" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Contacto</MenuItem></a>
             </Menu>
         <Right>
