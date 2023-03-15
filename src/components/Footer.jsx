@@ -12,6 +12,10 @@ font-family: monospace;
 background-color: gray;
 color: white;
 margin-bottom: 0;
+@media screen and (max-width: 768px) {
+  border-top: 2px solid black;
+  background-color: white;
+}
 `;
 
 const Container = styled.div`
@@ -35,7 +39,7 @@ text-decoration: none;
 color: white;
 font-family: monospace;
 @media screen and (max-width: 768px) {
-  color: white;
+  color: gray;
 }
 `;
 
@@ -44,7 +48,7 @@ font-family: monospace;
 font-size: 17px;
 color: white;
 @media screen and (max-width: 768px) {
-  
+  color: gray;
 }
 `;
 
@@ -106,7 +110,6 @@ const Footer = () => {
             © 2023 - Walter - Limpieza Tapizados<br />
                 Todos los Derechos Reservados
             </Pe>
-            Siguenos!
             <Instagram href="https://www.instagram.com/waltertapizados/" target="_blank" rel="noopener noreferrer"><img src='/assets/instagram.png' alt='instagram link' height={"40px"}/></Instagram>
     </Right>
     </FooTer>

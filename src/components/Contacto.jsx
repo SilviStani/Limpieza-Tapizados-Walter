@@ -40,7 +40,7 @@ const Contacto = () => {
           onChange={e => setNumber(e.target.value)}
           />
           <p>Consulta:</p>  
-        <textarea className='inputs area' id="message" name="w3review" rows="4" cols="50" value={message} placeholder={"Escribe tu consulta aqui:"} onChange={e => setMessage(e.target.value)} />
+        <input className='area' id="message" name="w3review" rows="4" cols="50" value={message} placeholder={"Escribe tu consulta aqui:"} onChange={e => setMessage(e.target.value)} />
       <a href={`https://wa.me/5493425972698/?text=Nombre: ${name} + ${"\n"} + %20 + Teléfono alternativo: ${number} + ${"\n"}  + %20 + Mensaje: ${message}`}
       target="_blank" rel="noopener noreferrer" className='a'><img src="/assets/send-message.png" alt="" height={"20px"} className='img'/></a>
       </form>

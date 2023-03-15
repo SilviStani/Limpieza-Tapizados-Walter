@@ -60,6 +60,7 @@
 .area{
     height: 200px;
     border: black 2px solid;
+    border-radius: 5px;
 }
 
 .a{
@@ -109,7 +110,7 @@
         width: 95%;
     }
     .inputs{
-        width: 320px;
+        width: 250px;
         margin: 10px;
     }
     .Container{
@@ -117,6 +118,7 @@
     }
     .area{
         height: 300px;
+        width: 250px;
     }
     .img{
         height: 20px;
