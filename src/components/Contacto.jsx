@@ -8,39 +8,21 @@ const Contacto = () => {
   const [number, setNumber] = useState('');
   const [name, setName] = useState('');
   
-  const Container = styled.div`
-  display: flex;
-  width: 100%;
-  `;
-  
-  const Left = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  `;
-  const Right = styled.div`
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-  `;
   return (
-    <div className='Container' id='contacto'>
+    <div className='container' id='contacto'>
       <div className='TituloContainer'>
         <h1 className='Titulo'>¿Consultas? Contáctame</h1>
       </div>
-      <Container>
-      <Left>
+      <div className='Container'>
+      <div className='Left'>
         <video src="/assets/celular.mp4"
         width={"600px"}
             autoPlay
             loop
             muted
             style={{ marginLeft: "30%" }}/>
-      </Left>
-        <Right>
+      </div>
+        <div className='Right'>
       <div className='form'>
         <form className="formulario">
           <p>Nombre:</p>
@@ -64,8 +46,8 @@ const Contacto = () => {
       target="_blank" rel="noopener noreferrer" className='a'><img src="/assets/send-message.png" alt="" height={"20px"} className='img'/></a>
       </form>
       </div>
-      </Right>
-      </Container>
+      </div>
+      </div>
     </div>
   )
 }
