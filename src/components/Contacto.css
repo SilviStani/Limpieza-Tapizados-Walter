@@ -98,7 +98,7 @@
 .video{
     margin-left: 30%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .TituloContainer{
         width: 100%;
         background-color: transparent;
@@ -152,5 +152,13 @@
         height: 120px;
         margin: 0;
     }
+}
+@media screen and (max-width: 1445px) {
+    .video{
+        width: 400px;
+    }   
+    .form{
+        height: 520px;
+    } 
 }
    

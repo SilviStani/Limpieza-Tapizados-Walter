@@ -20,10 +20,17 @@ const Trabajo = styled.div`
 `;
 
 const Titulo = styled.h2`
-  height: 30px;
-`;
-const SubTitulo = styled.h3`
-  height: 30px;
+  height: 20px;
+  color: #65647C;
+  font-size: 25px;
+  text-align: center;
+  @media screen and (max-width: 770px) {
+    font-size: 20px;
+  }
+  `;
+  const SubTitulo = styled.h3`
+  height: 20px;
+  font-size: 18px;
 `;
 
 const Steps = styled.div`
@@ -32,8 +39,9 @@ const Steps = styled.div`
   align-items: center;
   width: 100%;
   height: 85%;
-`;
-const StepiStep = styled.div`
+  `;
+  
+  const StepiStep = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -42,6 +50,10 @@ const StepiStep = styled.div`
   width: 180px;
   border-radius: 100%;
   border: 2px dashed crimson;
+  @media screen and (max-width: 770px) {
+    border: none;  
+    justify-content: center;
+  }
   `;
   
   const Pago = styled.div`
@@ -49,6 +61,10 @@ const StepiStep = styled.div`
   height: 30%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  @media screen and (max-width: 770px) {
+    width: 100%;
+  }
   `;
   
   const Preguntas = styled.div`
@@ -56,18 +72,22 @@ const StepiStep = styled.div`
   height: 30%;
   display: flex;
   align-items: center;
-`;
-
-const Image = styled.img`
+  justify-content: space-around;
+  `;
+  
+  const Image = styled.img`
   height: 30px;
   transform: rotate(25deg);
+  @media screen and (max-width: 770px) {
+    height: 25px;
+  }
 `;
 
 const Desc = styled.p`
   text-align: center;
   font-family: "monospace";
   font-weight: bold;
-`;
+  `;
 
 const Contain = styled.div`
 width: 100%;
@@ -77,15 +97,34 @@ justify-content: center;
 align-items: center;
 border-top: 3px dashed black; 
 border-bottom: 3px dashed black;
+@media screen and (max-width: 770px) {
+  border-top: none; 
+}
 `;
 
 const Video = styled.video`
 height: 220px;
+@media screen and (max-width: 770px) {
+  height: 100px; 
+}
+@media screen and (max-width: 1445px) {
+  height: 180px; 
+}
+`;
+
+const Ul = styled.ul` 
+`;
+
+const Li = styled.li`
+color: #65647C;
+@media screen and (max-width: 770px) {
+ font-size: 15px;   
+}
 `;
 
 const SobreNos = () => {
   return (
-    <Container>
+    <Container id="Nosotros">
       <Trabajo>
         <Contain>
           <Titulo>Cómo Trabajamos</Titulo>
@@ -119,13 +158,25 @@ const SobreNos = () => {
         </Steps>
       </Trabajo>
       <Pago>
+        <Titulo>Formas de <br /> Pago</Titulo>
         <Video 
             src = "/assets/pago.mp4"
             autoPlay
             loop
             muted/>
+            <Ul>
+              <Li>Mercado Pago</Li>
+              <Li>Efectivo</Li>
+              <Li>Transferencia Bancaria</Li>
+            </Ul>
       </Pago>
       <Preguntas>
+      <Ul>
+              <Li>El servicio dura entre 60 y 90 minutos</Li>
+              <Li>Higieniza y Desinfecta</Li>
+              <Li>Los Productos no son Tóxicos</Li>
+              <Li>Las manchas salen? <span style={{color: "crimson"}}>SI!!</span></Li>
+            </Ul>
       <Video 
             src = "/assets/consulta.mp4"
             autoPlay

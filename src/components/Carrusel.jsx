@@ -10,7 +10,7 @@ const Container = styled.div`
   widht: 100%;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 770px) {
     height: 100%;
     background-color: black; 
   }
@@ -20,7 +20,7 @@ const ContainerTwo = styled.div`
   margin-top: 5vh;
   height: 100%;
   display: flex;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 770px) {
     display: none;
   }
 `;
@@ -62,7 +62,7 @@ const Title = styled.h2`
   font-size: 40px;
   text-decoration: underline crimson;
   width: 100%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 770px) {
     margin-top: 0;
     
   }
@@ -76,7 +76,7 @@ const Desc = styled.p`
 
 const PhoneCarousel = styled.div` 
 display: none;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
  display: flex;
  flex-direction: column;
  justify-content: center;

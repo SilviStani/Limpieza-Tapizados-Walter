@@ -7,7 +7,7 @@ const Container = styled.div`
   widht: 100%;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 770px) {
     height: 100%;
     background-color: black;
   }
@@ -18,7 +18,7 @@ const ContainerTwo = styled.div`
   height: 100%;
   display: flex;
   justify-content:space-around;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 770px) {
     margin-top: 0px;
     margin-left: 10px;
     display: flex;
@@ -39,8 +39,12 @@ const Right = styled.div`
   text-align: center;
   border: dashed white 2px;
   box-shadow: 0px 0px 2px 8px gray;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 770px) {
     display: none;
+  }
+  @media screen and (max-width: 1440px) {
+    border-radius: 20px;
+    width: 280px;    
   }
   `;
   const Left = styled.div`
@@ -48,7 +52,7 @@ const Right = styled.div`
   display: flex;
   justify-content: center;
   margin: 30px;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 770px) {
      width:80%;
      height: 60%;
      display: flex;
@@ -69,7 +73,7 @@ const Title = styled.h2`
   font-size: 40px;
   text-decoration: underline crimson;
   width: 100%;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 770px) {
     margin-top: 2px;
     font-size: 25px;
     border: none;
@@ -80,8 +84,11 @@ const Desc = styled.p`
   font-size: 20px;
   width: 60%;
   margin-top: 20px;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 770px) {
     display: none;
+  }
+  @media screen and (max-width: 1440px) {
+    font-size: 20px;
   }
 `;
 

@@ -10,10 +10,13 @@ align-item: center;
 font-family: monospace;
 background-color: gray;
 color: white;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   padding: 5px;
   border-top: 2px solid black;
   background-color: white;
+}
+@media screen and (max-width: 1440px) {
+  width: 100%;
 }
 `;
 
@@ -28,8 +31,11 @@ const Huno = styled.h1`
 font-family: 'Playfair Display';
 font-size: 30px;
 color: white;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   display: none;
+}
+@media screen and (max-width: 1440px) {
+  font-size: 25px;
 }
 `;
 
@@ -37,8 +43,11 @@ const A = styled.a`
 text-decoration: none;
 color: white;
 font-family: monospace;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   color: gray;
+}
+@media screen and (max-width: 1440px) {
+  font-size: 15px;
 }
 `;
 
@@ -46,7 +55,7 @@ const Phone = styled.span`
 font-family: monospace;
 font-size: 17px;
 color: white;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   color: gray;
   font-size: 12px;
 }
@@ -57,7 +66,7 @@ display: flex;
 margin-left: 45px;
 flex-direction: column;
 text-align: center;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
 display: flex;
 margin-left: 5px;
 flex-direction: column;
@@ -67,7 +76,7 @@ text-align: center;
 
 const Right = styled.div`
 with: 40%;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,14 +85,14 @@ with: 40%;
 `;
 
 const Pe = styled.p`
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   display: none;
 }
 `;
 
 const Instagram = styled.a`
 display: none;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   display: flex;
   justify-content: center;
   width: 100px;

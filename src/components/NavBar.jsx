@@ -7,7 +7,7 @@ heigth: 50px;
 width: 100%;
 border-bottom: gray 2px dashed;
 background-color: white;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -19,7 +19,7 @@ padding: 10px 20px;
 display: flex;
 justify-content: space-between;
 align-item: center;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   width: 100%;
   display: flex;
   align-item: center;
@@ -35,7 +35,7 @@ align-item: center;
 justify-content: space-between;
 `;
 const Right = styled.div`
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
  display: flex;
  }
 `;
@@ -45,7 +45,7 @@ height: 45px;
 border-radius: 100%;
 cursor: pointer;
 justify-content: space-between;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   display: none;
   }
 `;
@@ -54,7 +54,7 @@ justify-content: space-between;
 const Menu = styled.ul`
 display: flex;
 list-style: none;
-@media screen and (max-width:768px) {
+@media screen and (max-width:770px) {
   height: 40px;
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@ margin-right: 30px;
 font-size: 20px;
 font-weight: bold;
 color: gray;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   font-size: 15px;
   display: flex;
   justify-content: center;
@@ -84,6 +84,7 @@ const NavBar = () => {
             <Menu style={{cursor:"pointer"}} className="menu"> 
                <a href="#galeria" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Fotos</MenuItem></a> 
                <a href="#Demo" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Video</MenuItem></a> 
+               <a href="#Nosotros" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Como Trabajamos</MenuItem></a> 
                <a href="#contacto" style={{textDecoration:"none"}} ><MenuItem className="menuItem">Contacto</MenuItem></a>
                <a href="https://wa.me/5493425972698/?text=Estoy%20interesado%20en%20su%20servicio" target="_blank" rel="noopener noreferrer"><img className="logoWhatsapp" src="/assets/whatsapp.png" alt="Instagram Walter Tapizados" height={"35px"} style={{marginLeft: "10px"}}/></a>
             </Menu>

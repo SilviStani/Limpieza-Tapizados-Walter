@@ -5,7 +5,7 @@ const Container = styled.div`
 height: calc(100vh - 50px);
 display: flex;
 padding: 20px;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   height: 100%;
   width: 100%;
   justify-content:start;
@@ -30,7 +30,7 @@ justify-content: center;
 
 const Right = styled.div`
 width: 40%;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   display: none;
 }
 `;
@@ -38,7 +38,7 @@ width: 40%;
 const Title = styled.h1`
 font-size: 60px;
 width: 60%;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   font-size: 30px;
   font-weight: bold;
   color: white;
@@ -49,7 +49,7 @@ const Desc = styled.p`
 font-size: 20px;
 width: 60%;
 margin-top:20px;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   padding: 5px;
   font-size: 18px;
   color: white;
@@ -64,8 +64,12 @@ display: flex;
 justify-content:space-between;
 align-item: center;
 margin-top: 50px;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   display: none;
+}
+@media screen and (max-width: 1445px) {
+  width: 100%;
+  justify-content: space-around;
 }
 `;
 
@@ -81,7 +85,7 @@ font-size: 20px;
 border-radius: 15px;
 border: white 2px dashed;
 box-shadow: 0px 0px 2px 2px gray;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
       
   }
 `;
@@ -95,7 +99,7 @@ const Phone = styled.span`
 font-family: monospace;
 font-size: 17px;
 color: gray;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     font-size: 15px;
     margin-top: 150px;
     background-color: gray;
@@ -112,7 +116,7 @@ const A = styled.a`
 text-decoration: none;
 color: gray;
 font-family: monospace;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   color: white;
 }
 `;
