@@ -31,6 +31,9 @@ const Titulo = styled.h2`
   const SubTitulo = styled.h3`
   height: 20px;
   font-size: 18px;
+  @media screen and (max-width: 770px) {
+    font-size: 15px;
+  }
 `;
 
 const Steps = styled.div`
@@ -79,7 +82,7 @@ const Steps = styled.div`
   height: 30px;
   transform: rotate(25deg);
   @media screen and (max-width: 770px) {
-    height: 25px;
+    height: 20px;
   }
 `;
 
@@ -87,6 +90,9 @@ const Desc = styled.p`
   text-align: center;
   font-family: "monospace";
   font-weight: bold;
+  @media screen and (max-width: 770px) {
+    fonst-size: 15px;
+  }
   `;
 
 const Contain = styled.div`
@@ -108,7 +114,7 @@ height: 220px;
   height: 100px; 
 }
 @media screen and (max-width: 1445px) {
-  height: 180px; 
+  height: 130px; 
 }
 `;
 
@@ -118,7 +124,7 @@ const Ul = styled.ul`
 const Li = styled.li`
 color: #65647C;
 @media screen and (max-width: 770px) {
- font-size: 15px;   
+ font-size: 13px;   
 }
 `;
 
@@ -158,7 +164,7 @@ const SobreNos = () => {
         </Steps>
       </Trabajo>
       <Pago>
-        <Titulo>Formas de <br /> Pago</Titulo>
+        <SubTitulo>Formas de <br /> Pago</SubTitulo>
         <Video 
             src = "/assets/pago.mp4"
             autoPlay
