@@ -19,7 +19,7 @@ const Contacto = () => {
             autoPlay
             loop
             muted
-            style={{ marginLeft: "30%" }}
+            className='video'
           />
         </div>
         <div className="Right">
@@ -68,49 +68,42 @@ const Contacto = () => {
             </form>
           </div>
         </div>
-          <div className="formW">
-            <form className="formulario">
-              <input
-                className="inputs"
-                id="name"
-                placeholder="Nombre:"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+        <div className="formW">
+          <form className="formulario">
+            <input
+              className="inputs"
+              id="name"
+              placeholder="Nombre:"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <textarea
+              className="area"
+              id="message"
+              name="w3review"
+              rows="4"
+              cols="50"
+              value={message}
+              placeholder={"Escribe tu consulta aqui:"}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <a
+              href={`https://wa.me/5493425972698/?text=Nombre: ${name} + // + %20 + Mensaje: ${message}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="a"
+            >
+              <img
+                src="/assets/send-message.png"
+                alt=""
+                height={"20px"}
+                className="img"
               />
-              <input
-                className="inputs"
-                id="number"
-                placeholder="Teléfono alternativo:"
-                value={number}
-                onChange={(e) => setNumber(e.target.value)}
-              />
-              <textarea
-                className="area"
-                id="message"
-                name="w3review"
-                rows="4"
-                cols="50"
-                value={message}
-                placeholder={"Escribe tu consulta aqui:"}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-              <a
-                href={`https://wa.me/5493425972698/?text=Nombre: ${name} + // + %20 + Teléfono alternativo: ${number} + // + %20 + Mensaje: ${message}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="a"
-              >
-                <img
-                  src="/assets/send-message.png"
-                  alt=""
-                  height={"20px"}
-                  className="img"
-                />
-              </a>
-            </form>
-          </div>
+            </a>
+          </form>
         </div>
       </div>
+    </div>
   );
 };
 

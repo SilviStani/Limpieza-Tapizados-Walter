@@ -16,6 +16,9 @@
     justify-content: center;
     align-items: center;
 }
+.formW{
+    display: none;
+}
 
 .TituloContainer{
     background-color:white;
@@ -58,7 +61,8 @@
 }
 
 .area{
-    height: 200px;
+    height: 250px;
+    width: 300px;
     border: black 2px solid;
     border-radius: 5px;
 }
@@ -91,7 +95,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.video{
+    margin-left: 30%;
+}
 @media screen and (max-width: 768px) {
     .TituloContainer{
         width: 100%;
@@ -102,6 +108,9 @@
         font-weight: bolder;
     }  
     .formW{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 100%;
         width: 100%;
     }
@@ -115,6 +124,10 @@
         background-image: url("../../public/assets/whatsfondo.png");
         background-size: contain;
 
+    }
+    .Container{
+        display: flex;
+        flex-direction: column;
     }
     .area{
         height: 330px;
@@ -130,11 +143,14 @@
         border-radius: 100%;   
     }
     .Left{
-        display: none;
+        margin: 0;
     }
     .Right{
         display: none;
     }
-
+    .video{
+        height: 120px;
+        margin: 0;
+    }
 }
    
