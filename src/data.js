@@ -115,7 +115,7 @@ const data = [
         id: 17,
         imgSource: "/assets/colchon.jpg",
         alt: "Colchon antes y despues de la limpieza",
-        label: "Acolchado",
+        label: "Colchón",
         p: "Antes y Después"
     },
     {

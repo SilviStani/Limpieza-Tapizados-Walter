@@ -9,7 +9,7 @@ const Contacto = () => {
   return (
     <div className="container" id="contacto">
       <div className="TituloContainer">
-        <h1 className="Titulo">¿Consultas? Contáctame</h1>
+        <h1 className="Titulo">Mensaje <span style={{color: "crimson"}}>DIRECTO</span> al Whatsapp</h1>
       </div>
       <div className="Container">
         <div className="Left">
