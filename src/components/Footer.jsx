@@ -112,6 +112,8 @@ const Imagen = styled.img`
 `;
 
 const Footer = () => {
+  const ano = new Date();
+  let fecha = ano.getFullYear();
   return (
     <FooTer>
       <Container>
@@ -149,7 +151,7 @@ const Footer = () => {
       </Contactame>
       <Right>
         <Pe>
-          © 2023 - Walter - Limpieza Tapizados
+          © {fecha} - Walter - Limpieza Tapizados
           <br />
           Todos los Derechos Reservados
         </Pe>
