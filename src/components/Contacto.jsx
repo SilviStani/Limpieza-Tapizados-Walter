@@ -53,7 +53,11 @@ const Contacto = () => {
                 onChange={(e) => setMessage(e.target.value)}
               />
               <a
-                href={`https://wa.me/5493425972698/?text=Nombre: ${name} + // + %20 + Teléfono alternativo: ${number} + // + %20 + Mensaje: ${message}`}
+                href={`https://wa.me/5493425972698/?text=
+                Nombre: ${name}+%0A
+                +Teléfono alternativo: ${number}
+                +%0A
+                +Mensaje: ${message}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="a"
