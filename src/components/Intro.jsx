@@ -130,15 +130,14 @@ const Intro = () => {
           <Info >
             <a href="#contacto"><Button className='boton'>Consultas =></Button></a>
             <Contact>
-                <Phone className='phone'>Resistencia / Corrientes<br/>
-                <A href="tel:+5493625161038">+549-362-5161038</A> <br/>
+                <Phone className='phone'>Resistencia<br/>
                 <A href="tel:+5493425972698">+549-342-5972698</A>
                 </Phone>
             </Contact>
           </Info>
         </Left>
         <Right>
-            <Image src='assets/perrito-sillon.jpg' alt="Gato descansando en su sillon favorito" />
+            <Image src='assets/perrito-sillon.jpg' alt="Perro descansando en su sillon favorito" />
         </Right>
     </Container>
   )

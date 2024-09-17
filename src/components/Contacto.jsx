@@ -91,19 +91,6 @@ const Contacto = () => {
               placeholder={"Escribe tu consulta aqui:"}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <a
-              href={`https://wa.me/5493425972698/?text=Nombre: ${name} + // + %20 + Mensaje: ${message}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="a"
-            >
-              <img
-                src="/assets/send-message.png"
-                alt=""
-                height={"20px"}
-                className="img"
-              />
-            </a>
           </form>
         </div>
       </div>

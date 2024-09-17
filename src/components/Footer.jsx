@@ -122,14 +122,8 @@ const Footer = () => {
         </Huno>
         <Contact>
           <Phone className="phone">
-            Resistencia / Corrientes
+            Resistencia
             <br />
-            <img
-              src="/assets/phone-call.png"
-              alt="llamame en el siguiente enlace"
-              height={"20px"}
-            />
-            <A href="tel:+5493625161038"> +549-362-5161038</A> <br />
             <img
               src="/assets/phone-call.png"
               alt="llamame en el siguiente enlace"
