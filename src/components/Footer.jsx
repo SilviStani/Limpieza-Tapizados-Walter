@@ -108,7 +108,7 @@ const Contactame = styled.a`
 
 const Imagen = styled.img`
   border-radius: 100%;
-  height: 80px;
+  height: 60px;
 `;
 
 const Footer = () => {

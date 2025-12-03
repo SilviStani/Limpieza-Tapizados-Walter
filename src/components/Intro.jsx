@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-height: calc(100vh - 50px);
+height: calc(100% + 20vh);
 display: flex;
 padding: 20px;
 @media screen and (max-width: 770px) {
@@ -75,7 +75,7 @@ margin-top: 50px;
 
 const Button = styled.button`
 padding: 15px;
-background-color: gray;
+background-color: orange;
 border: none;
 color: white;
 font-weight: bold;
@@ -84,7 +84,7 @@ font-style: italic;
 font-size: 20px;
 border-radius: 15px;
 border: white 2px dashed;
-box-shadow: 0px 0px 2px 2px gray;
+box-shadow: 0px 0px 2px 2px darkorange;
 @media screen and (max-width: 770px) {
       
   }
@@ -123,14 +123,14 @@ font-family: monospace;
 
 const Intro = () => {
   return (
-    <Container>
+    <Container id='home'>
         <Left >
           <Title >Limpieza y Desinfección de Tapizados</Title>
           <Desc >Sillones, Sofás, Automoviles, Cortinados, Colchones, Alfombras, Limpieza en Seco.</Desc> 
           <Info >
-            <a href="#contacto"><Button className='boton'>Consultas =></Button></a>
+            <a href="#contacto"><Button className='boton'>Consultas {"=>"}</Button></a>
             <Contact>
-                <Phone className='phone'>Resistencia<br/>
+                <Phone className='phone'>Santa Fé<br/>
                 <A href="tel:+5493425972698">+549-342-5972698</A>
                 </Phone>
             </Contact>

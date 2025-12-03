@@ -1,0 +1,42 @@
+.navbarHeader_Container {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgb(165, 165, 165);
+    
+    .navbarHeader {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+
+        .navbarLogo {
+            .navbar_Logo_Image {
+                height: 10vh;
+                border-radius: 100%;
+            }
+        }
+        .menu{
+            display: flex;
+            gap: 2rem;
+
+            .menuItem {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.2rem;
+                color: #212529;
+
+                &:hover {
+                    color: gray;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

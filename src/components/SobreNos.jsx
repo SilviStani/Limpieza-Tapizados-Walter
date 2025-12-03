@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ const Trabajo = styled.div`
 
 const Titulo = styled.h2`
   height: 20px;
-  color: #65647c;
+  color: orangeRed;
   font-size: 25px;
   text-align: center;
   @media screen and (max-width: 770px) {
@@ -102,8 +102,7 @@ const Contain = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 3px dashed black;
-  border-bottom: 3px dashed black;
+  margin-bottom: 10vh;
   @media screen and (max-width: 770px) {
     border-top: none;
   }

@@ -25,13 +25,10 @@ function App() {
       <Container>
         <Demo />
       </Container>
-      <Container>
+      <Container style={{ height: "100%" }}>
         <SobreNos/>
       </Container>
-      <Container>
-        <Contacto />
-      </Container>
-      <Container style={{ height: "12vh", backgroundColor: "gray" }}>
+      <Container style={{ height: "12vh", backgroundColor: "gray", marginTop: "10vh" }}>
         <FooTer />
       </Container>
     </>
