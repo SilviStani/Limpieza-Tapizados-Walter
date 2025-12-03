@@ -89,6 +89,7 @@ const NavBar = () => {
                <a href="https://wa.me/5493425972698/?text=Estoy%20interesado%20en%20su%20servicio" target="_blank" rel="noopener noreferrer"><img className="logoWhatsapp" src="/assets/whatsapp.png" alt="Instagram Walter Tapizados" height={"35px"} style={{marginLeft: "10px"}}/></a>
             </Menu>
         <Right>
+          <a href="mailto:rulitoymorita@gmail.com" target="_blank" rel="noopener noreferrer">Mail</a>
           <a href="https://www.instagram.com/waltertapizados/" target="_blank" rel="noopener noreferrer">
           <Logo src="/assets/instagram.png" alt="Instagram Walter Tapizados" height={"40px"} className="logo"/>
           </a>
