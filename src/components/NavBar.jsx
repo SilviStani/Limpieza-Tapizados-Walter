@@ -38,7 +38,7 @@ const NavBar = () => {
           </a>
           <a
             className="menuItem"
-            href="mailto:rulitoymorita@gmail.com"
+            href="mailto:presupuestos@walter-limpieza-tapizados.digital"
             target="_blank"
             rel="noopener noreferrer">
             <img
