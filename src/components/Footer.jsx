@@ -122,7 +122,7 @@ const Footer = () => {
         </Huno>
         <Contact>
           <Phone className="phone">
-            Resistencia
+            Santa Fé
             <br />
             <img
               src="/assets/phone-call.png"
