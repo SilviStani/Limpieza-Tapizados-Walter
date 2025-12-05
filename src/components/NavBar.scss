@@ -6,7 +6,7 @@
     justify-content: center;
     position: fixed;
     z-index: 3;
-    background-color: #e5f7ff;
+    background-color: #f0fbff;
     box-shadow: 0 2px 4px rgb(165, 165, 165);
 
 
@@ -17,15 +17,6 @@
         align-items: center;
         width: 90%;
 
-        .navbarLogo {
-            .navbar_Logo_Image {
-                height: 15vh;
-                border-radius: 100%;
-                @media screen and (max-width: 770px) {
-                    height: 12vh;
-                }
-            }
-        }
 
         .menu {
             display: flex;
@@ -34,18 +25,17 @@
             .menuItem,
             .menuItem_mobile {
                 text-decoration: none;
-                font-weight: 600;
-                font-size: 1.2rem;
-                color: #202020;
+                font-size: 18px;
+                color: black;
                 
                 &:hover {
                     color: gray;
                     transform: scale(1.1);
                 }
                 .logo{
-                    height: 40px;
+                    height: 30px;
                     @media screen and (max-width: 770px) {
-                        height: 25px;
+                        height: 20px;
                     }
                 }
             }

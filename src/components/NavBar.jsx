@@ -6,13 +6,9 @@ const NavBar = () => {
   return (
     <section id='NavBar' className='navbarHeader_Container'>
       <section className='navbarHeader'>
-        <a href="#home" className='navbarLogo'>
-          <img
-            src="/assets/Logo-blanco.png"
-            alt="Logo Walter Tapizados"
-            className='navbar_Logo_Image'
-          />
-        </a>
+        <p
+        style={{textAlign:"center", fontSize:"20px", letterSpacing:"8px", fontWeight:"bold"}}>Walter 
+        <br/><span style={{textAlign:"center", fontSize:"12px", letterSpacing:"2px", fontWeight: "lighter"}}>Limpieza Tapizados</span></p>
         <article style={{ cursor: "pointer" }} className="menu">
           <a
             href="#galeria"
@@ -44,7 +40,6 @@ const NavBar = () => {
             <img
               src="/assets/correo.png"
               alt="Gmail Walter Tapizados"
-              height={"40px"}
               className="logo"
             />
           </a>
@@ -57,7 +52,6 @@ const NavBar = () => {
             <img
               src="/assets/instagram.png"
               alt="Instagram Walter Tapizados"
-              height={"40px"}
               className="logo"
             />
           </a>
@@ -81,12 +75,3 @@ const NavBar = () => {
 }
 
 export default NavBar;
-/*
-</article>
-</section>
-</section>
-)
-}
-
-export default NavBar;
-*/
