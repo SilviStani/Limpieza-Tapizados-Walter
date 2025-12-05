@@ -8,7 +8,7 @@ const NavBar = () => {
       <section className='navbarHeader'>
         <a href="#home" className='navbarLogo'>
           <img
-            src="/assets/Logo-byn.png"
+            src="/assets/Logo-blanco.png"
             alt="Logo Walter Tapizados"
             className='navbar_Logo_Image'
           />
@@ -37,7 +37,7 @@ const NavBar = () => {
             Presupuesto
           </a>
           <a
-            className="menuItem"
+            className="menuItem_mobile"
             href="mailto:presupuestos@walter-limpieza-tapizados.digital"
             target="_blank"
             rel="noopener noreferrer">
@@ -49,7 +49,7 @@ const NavBar = () => {
             />
           </a>
           <a
-            className="menuItem"
+            className="menuItem_mobile"
             href="https://www.instagram.com/waltertapizados/"
             target="_blank"
             rel="noopener noreferrer"
@@ -62,7 +62,7 @@ const NavBar = () => {
             />
           </a>
           <a
-            className="menuItem"
+            className="menuItem_mobile"
             href="https://wa.me/5493425972698/?text=Estoy%20interesado%20en%20su%20servicio"
             target="_blank"
             rel="noopener noreferrer"
@@ -71,7 +71,6 @@ const NavBar = () => {
               className="logo"
               src="/assets/whatsapp.png"
               alt="Instagram Walter Tapizados"
-              height={"40px"}
               style={{ marginLeft: "10px" }}
             />
           </a>
